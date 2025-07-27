@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.navbar {
+  @apply h-[60px] flex items-center justify-between gap-5 px-5;
+}
+.nav-logo {
+  @apply text-3xl font-bold;
+}
+.nav-options {
+  @apply h-full w-[80%] flex flex-col items-start gap-5 p-5 z-50 absolute top-0 transition-all bg-white md:p-0 md:relative md:flex-row;
+}
+.nav-option {
+  @apply font-bold text-lg md:font-normal md:text-gray-500;
+}
+
+.swiper_content_btn_prev {
+  @apply h-full flex items-center justify-center top-0 left-2 bottom-0 absolute z-10;
+}
+.swiper_btn_prev {
+  @apply w-12 h-12 flex items-center justify-center rounded-full bg-white md:hidden;
+}
+.swiper_content_btn_next {
+  @apply h-full top-0 flex items-center justify-center right-2 bottom-0 absolute z-10;
+}
+.swiper_btn_next {
+  @apply w-12 h-12 flex items-center justify-center rounded-full bg-white md:hidden;
+}
+.swiper_select_images {
+  @apply rounded-lg border-2 border-transparent transition-all hover:border-orange-500;
+}
+
+.container_product_content {
+  @apply px-5 md:max-w-[650px];
+}
+.product_content_title {
+  @apply font-bold text-gray-500 mt-5;
+}
+.product_content_subtitle {
+  @apply text-3xl font-bold text-black mt-3 md:text-5xl;
+}
+.product_content_desc {
+  @apply text-justify text-gray-500 mt-6;
+}
+
+.container_quantity_btn {
+  @apply h-[60px] flex items-center justify-between rounded-md bg-gray-100 px-5 md:w-[30%];
+}
