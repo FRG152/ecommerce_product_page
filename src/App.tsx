@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
-import ProductInfo from "./components/ProductInfo";
 import Swiper from "./components/Swiper";
+import ProductInfo from "./components/ProductInfo";
 
 function App() {
   return (

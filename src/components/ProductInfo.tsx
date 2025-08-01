@@ -1,4 +1,6 @@
 import IconCart from "../assets/images/icon-cart.svg";
+import Button from "./Button";
+// import Review from "./Review";
 import QuantityBtn from "./QuantityBtn";
 
 const ProductInfo = () => {
@@ -24,11 +26,13 @@ const ProductInfo = () => {
       </div>
       <div className="flex flex-col md:flex-row md:items-center gap-5">
         <QuantityBtn />
-        <button className="w-full h-[60px] flex items-center justify-center rounded-md bg-orange-400 gap-5 md:w-[70%]">
-          <img src={IconCart} />
-          <p className="font-bold text-black">Add to cart</p>
-        </button>
+        <Button
+          icon={<img src={IconCart} />}
+          text="Add to card"
+          styles="md:max-w-[60%]"
+        />
       </div>
+      {/* <Review /> */}
     </div>
   );
 };

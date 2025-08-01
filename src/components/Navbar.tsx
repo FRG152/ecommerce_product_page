@@ -4,6 +4,7 @@ import IconClose from "../../public/images/icon-close.svg";
 import ImageAvatar from "../../public/images/image-avatar.png";
 import { useState } from "react";
 import { navOptions } from "../constants";
+import Cart from "./Cart";
 
 interface Props {
   show?: boolean;
@@ -65,6 +66,7 @@ const Navbar = () => {
     <nav className="navbar">
       <NavLeftContent show={show} handleShow={handleShow} />
       <NavRigthContent />
+      <Cart />
     </nav>
   );
 };
